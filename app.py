@@ -1,4 +1,4 @@
-#push to dockerhub
+#added dockerfile
 from flask import Flask
 
 app = Flask(__name__)
