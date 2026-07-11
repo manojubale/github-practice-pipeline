@@ -38,6 +38,12 @@ jobs:
           docker version
           docker info
 
+      - name: Build and push
+        uses: docker/build-push-action@v7
+        with:
+          push: true
+          tags: user/app:latest
+
       - name: Install Linter
         run: pip install ruff
 
