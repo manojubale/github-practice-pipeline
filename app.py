@@ -8,7 +8,7 @@ def home():
     return "🚀 Hello from GitHub Actions + Docker!"
 
 @app.route("/health")
-deff health():
+def health():
     return {
         "status": "UP",
         "application": "my-app"
