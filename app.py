@@ -8,11 +8,11 @@ def home():
     return "🚀 Hello from GitHub Actions + Docker!"
 
 @app.route("/health")
-def health():
+deff health():
     return {
         "status": "UP",
         "application": "my-app"
     }
 
 if __name__ == "__main__":
-    app.run(host="0.0", port=5000)
+    app.run(host="0.0.0.0", port=5000)
